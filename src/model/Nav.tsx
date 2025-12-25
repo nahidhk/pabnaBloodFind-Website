@@ -1,22 +1,19 @@
 import React from "react";
-import AppName from "../components/AppName";
-
-import { HiMenuAlt3 } from "react-icons/hi";
-
-
 export default function Nav() {
-    return (
-        <>
-            <nav className="nav flex around medel">
-                <div>
-                    <span className="logo">
-                        <AppName />
-                    </span>
-                </div>
-                <div>
-                    <HiMenuAlt3 />
-                </div>
-            </nav>
-        </>
-    )
+  return (
+    <>
+      <nav className="nav">
+        <div>
+          <h1 className="dd3">
+            {"Pabna Blood Find"}
+          </h1>
+        </div>
+        <div>
+          <p className="nav-link btn">
+            GitHub Open Sorce
+          </p>
+        </div>
+      </nav>
+    </>
+  )
 }

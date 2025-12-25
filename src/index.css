@@ -1,47 +1,116 @@
-
 @font-face {
-  font-family: banglaFont;
-  src: url("/asset//fonts/bangla.ttf");
+	font-family: banglaFont;
+	src: url("/asset/fonts/bangla.ttf");
 }
-
 
 body {
-  margin: 0;
-  font-family: banglaFont;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: banglaFont;
+	background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+	color: #eaeaea;
 }
 
+/* Navigation */
 .nav {
-  background-color: #4680ff;
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  top: 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14px 15px;
+	background: rgba(255, 255, 255, 0.08);
+	backdrop-filter: blur(12px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .flex {
-  display: flex;
+	display: flex;
 }
-.around{
-  justify-content: space-around;
+.around {
+	justify-content: space-around;
 }
-.beet{
-  justify-content: space-between;
+.beet {
+	justify-content: space-between;
 }
-.center{
-  justify-content: center;
+.center {
+	justify-content: center;
 }
-.medel{
-  align-items: center;
+.medel {
+	align-items: center;
 }
-.logo{
-  font-size: 2rem;
-   text-transform: capitalize;
-  color: #fff;
-  letter-spacing: -1px;
-  font-weight: bold;
+.logo {
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: -1px;
+	font-weight: bold;
 }
-.icon{
-  font-size: large;
+.icon {
+	font-size: large;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #ffd369;
+	font-weight: 600;
+	transition: 0.3s;
+}
+
+.nav-link:hover {
+	color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+}
+/* Layout */
+.container {
+	display: flex;
+	justify-content: center;
+	padding: 40px 20px;
+}
+
+.card {
+	width: 100%;
+	max-width: 820px;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 18px;
+	padding: 30px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(14px);
+	animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.ffd {
+	color: #ffd369;
+}
+
+.dd3 {
+	color: #7dd3fc;
+}
+
+.desc {
+	margin: 15px 0 25px 0;
+	line-height: 1.7;
+	color: #d1d5db;
+}
+.btn {
+	height: auto;
+	padding: 7px;
+	border: 1px solid #d1d5db;
+	border-radius: 3px;
 }
