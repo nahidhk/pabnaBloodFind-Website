@@ -1,12 +1,12 @@
 @font-face {
 	font-family: banglaFont;
-	src: url("/asset/fonts/bangla.ttf");
+	src: url("asset/fonts/bangla.ttf");
 }
 
 body {
 	margin: 0;
 	font-family: banglaFont;
-	background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+	background: linear-gradient(95deg, #0f2027, #203a43, #2c5364);
 	color: #eaeaea;
 }
 
@@ -16,7 +16,7 @@ body {
 	top: 0;
 	z-index: 100;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	padding: 14px 15px;
 	background: rgba(255, 255, 255, 0.08);
@@ -27,18 +27,23 @@ body {
 .flex {
 	display: flex;
 }
+
 .around {
 	justify-content: space-around;
 }
+
 .beet {
 	justify-content: space-between;
 }
+
 .center {
 	justify-content: center;
 }
+
 .medel {
 	align-items: center;
 }
+
 .logo {
 	font-size: 1.5rem;
 	text-transform: capitalize;
@@ -46,6 +51,7 @@ body {
 	letter-spacing: -1px;
 	font-weight: bold;
 }
+
 .icon {
 	font-size: large;
 }
@@ -59,14 +65,23 @@ body {
 
 .nav-link:hover {
 	color: #ffffff;
+	cursor: pointer;
 }
+
 h1,
 h2,
 h3,
 h4 {
 	margin: 0;
 }
+
 /* Layout */
+.xLayout {
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+
 .container {
 	display: flex;
 	justify-content: center;
@@ -89,6 +104,7 @@ h4 {
 		opacity: 0;
 		transform: translateY(20px);
 	}
+
 	to {
 		opacity: 1;
 		transform: translateY(0);
@@ -108,9 +124,36 @@ h4 {
 	line-height: 1.7;
 	color: #d1d5db;
 }
+
 .btn {
 	height: auto;
 	padding: 7px;
 	border: 1px solid #d1d5db;
 	border-radius: 3px;
+}
+
+.icon {
+	font-size: 26px;
+}
+
+.logoText {
+	display: block;
+}
+
+.bgImg {
+    height: 200px;
+    width: 100%;
+    background-image: url('./asset/img/81fd48e0-fddb-11ef-ab73-2916b85f325b.jpg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Dark effect */
+    filter: brightness(20%);
+}
+
+
+@media only screen and (max-width: 768px) {
+	.logoText {
+		display: none;
+	}
 }

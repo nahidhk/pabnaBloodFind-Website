@@ -1,13 +1,19 @@
-import react from "react";
+import React from "react";
 
 export default function Home() {
   return (
     <>
-      <div className="container">
-        <div className="card">
-          <h2>
-            Welcome to <span className="ffd">Pabna Blood Find </span> Offical Website.
-          </h2>
+      <div className="bgImg">
+
+      </div>
+      <div className="xLayout">
+        <div className="container">
+          <div className="card">
+            <h2>
+              Welcome to <span className="ffd">Pabna Blood Find </span> Offical Website.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, dolores quod modi tempore minus deserunt asperiores! Vero obcaecati dignissimos dolore cumque ullam possimus id excepturi voluptatem dolor alias, praesentium illum modi! Ut eveniet fuga dolorem autem! Necessitatibus excepturi commodi consequatur expedita voluptatum, numquam, asperiores quibusdam consectetur labore placeat error, illum odit officiis provident maxime sapiente nulla assumenda? Natus laborum, repellendus soluta molestiae aut vitae odio repudiandae, similique dolor fugiat neque non alias nisi labore ducimus! Sint molestias excepturi illum in ea quaerat illo nobis repudiandae pariatur magni voluptate quas provident unde officiis culpa facilis sequi animi et, exercitationem ut nemo? Ullam repudiandae vero vel fugiat! Consequatur, eum ullam dolore possimus quasi illum quis reprehenderit dolorum sequi eius rerum, beatae delectus id asperiores dicta eaque sapiente nostrum corrupti repellendus error at. Cupiditate recusandae animi sint rem ex laborum consequuntur at repellat facere, nulla placeat, iusto obcaecati. Modi minus vel debitis quisquam laboriosam quia doloribus? Consequatur dolorum id nobis nulla? Perferendis quis magni ad asperiores laborum aliquam unde ea possimus expedita, adipisci aliquid explicabo recusandae, vero porro, ratione mollitia autem in ex minima distinctio facilis. Reiciendis hic quis molestias sit ratione sed numquam quae expedita explicabo? Minima aliquam modi sint fugiat ducimus vel ad harum, cumque, aspernatur ab doloremque consectetur error veniam id sit laborum adipisci. Eos iusto ex porro animi magni! Autem iure, officiis a pariatur odio aut necessitatibus debitis obcaecati blanditiis fugit itaque eos nesciunt ducimus, ad eaque esse sunt! Eveniet saepe quis sunt quod veniam porro provident laudantium, deserunt explicabo commodi, dicta nisi eaque possimus! Vel ipsum natus magni itaque modi repellat ad placeat maiores debitis, distinctio dicta in molestias porro praesentium? Nam ea ut quod, quis veniam maiores culpa adipisci corrupti accusamus quam vel delectus sint dolorem, repellat iure minus consequatur fugit officiis laborum voluptatem repellendus eius id ratione molestiae. Reprehenderit, voluptates dolorem. Accusamus id alias dolorem ex, mollitia distinctio animi odio voluptatum accusantium maxime nisi enim quae soluta ducimus officia et optio debitis iste? Expedita voluptatibus iusto sit a delectus deleniti dolorum modi repellat eius similique reprehenderit minima cumque impedit soluta dolor porro exercitationem dolores, rem sapiente consequatur! Repellendus enim voluptates nisi, labore neque nostrum esse laboriosam expedita quidem recusandae quis aut culpa architecto? Quasi impedit saepe laboriosam molestiae tempora architecto maxime voluptates autem aspernatur ratione officia ipsam placeat recusandae quibusdam molestias eius voluptatem, sequi asperiores culpa ad? Ex rerum labore eaque voluptas iste laborum ea dolorum quidem sed natus non harum eum totam asperiores, vel quae debitis rem ab, unde nulla, iusto modi velit ullam consequatur? Quasi hic earum dolore accusantium nulla! Ab explicabo commodi mollitia quis! Enim sint dolore nobis beatae rem, et ullam mollitia, sunt ut, inventore aspernatur cumque esse perferendis quae dolorum! Itaque quis quod ullam quae sunt accusantium commodi praesentium recusandae alias vitae. Aliquam saepe voluptates aspernatur at accusantium debitis, repudiandae, delectus voluptatibus eligendi tempore ea hic iure doloribus facilis quisquam officia dolore animi sed, eveniet labore neque in mollitia. Explicabo aliquam, quam ab et inventore doloremque laborum magnam! Temporibus, consequuntur fuga!
+            </h2>
+          </div>
         </div>
       </div>
     </>

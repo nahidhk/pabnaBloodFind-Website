@@ -3,19 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.126",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
+    "feather-icons": "^4.29.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-icons": "^5.5.0",
+    "react-icons": "^4.12.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^4.9.5"
   }
 }
