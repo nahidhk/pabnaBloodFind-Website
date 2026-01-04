@@ -1,5 +1,5 @@
 import React from "react";
-import { SiGithub } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
 export default function Nav() {
 
@@ -12,12 +12,13 @@ export default function Nav() {
       <div>
         <a
           className="nav-link btn flex center medel"
-          href="https://github.com/nahidhk/"
+          href="https://github.com/nahidhk/pabnaBloodFind-Website"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiGithub className="icon" />
-          <span className="logoText">
+          <FaGithub className="icon" />
+          <span className="mbText">
+            &nbsp;
             GitHub Open Source
           </span>
         </a>

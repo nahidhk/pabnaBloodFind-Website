@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BsDownload } from "react-icons/bs";
-import { FaSearchengin } from "react-icons/fa6";
-import { FaRegCircleUser } from "react-icons/fa6";
+import { FaSearchengin, FaRegCircleUser, FaCode, FaAndroid } from "react-icons/fa6";
+import { CgTimelapse } from "react-icons/cg";
+
 
 export default function Home() {
   const [downBtn, setdownBtn] = useState(true);
@@ -9,32 +10,112 @@ export default function Home() {
   const [profile, setProfile] = useState(false);
   return (
     <>
-
       <div className="bgImg">
-
       </div>
       <div className="cllBtn">
         <div className="buttonBox">
-          <button className={downBtn ? "active" : ""} onClick={() =>{ {setFind(false) ; setProfile(false) ; setdownBtn(true)} }}>
-            <BsDownload className="iconbtn"/> &nbsp;
-            Dowonload App
+          <button className={downBtn ? "active" : ""} onClick={() => { { setFind(false); setProfile(false); setdownBtn(true) } }}>
+            <BsDownload className="iconbtn" />
+            <span className="mbText">
+              &nbsp;
+              Dowonload App
+            </span>
           </button>
-          <button className={find ? "active" : ""} onClick={() => {setFind(true) ; setProfile(false) ; setdownBtn(false)}}>
-            <FaSearchengin className="iconbtn" /> &nbsp;
-            Blood Find
+          <button className={find ? "active" : ""} onClick={() => { setFind(true); setProfile(false); setdownBtn(false) }}>
+            <FaSearchengin className="iconbtn" />
+            <span className="mbText">
+              &nbsp;
+              Find Blood Donor
+            </span>
           </button>
-          <button className={profile ? "active" : ""} onClick={() => { {setFind(false) ; setProfile(true) ; setdownBtn(false)} }}>
-            <FaRegCircleUser className="iconbtn" /> &nbsp;
-            Your Card and Profile
+          <button className={profile ? "active" : ""} onClick={() => { { setFind(false); setProfile(true); setdownBtn(false) } }}>
+            <FaRegCircleUser className="iconbtn" />
+            <span className="mbText">
+              &nbsp;
+              Your Card and Profile
+            </span>
+          </button>
+          <button>
+
+            <span className="mbText">
+              <FaCode className="iconbtn" />
+              &nbsp;
+            </span>
+            API
           </button>
         </div>
       </div>
       <div className="xLayout">
         <div className="container">
           <div className="card">
-            <h2>
-              Welcome to <span className="ffd">Pabna Blood Find </span> Offical Website.
-            </h2>
+            <h1 className="flex center medel ">
+              <p>
+                Download  <span className="ffd">Pabna Blood Find </span> Android app
+              </p>
+            </h1>
+            <p className="textCenter">
+              Pabna Blood Find is now available as an Android app. Download it now to find blood donors in Pabna with ease.
+            </p>
+
+            <p className="textCenter">
+              Click the button below to download the app and start using it today!
+            </p>
+
+
+
+
+            {/* <a className="downloadBtn" href="https://play.google.com/store/apps/details?id=com.pabna.blood.find">
+                Download Now
+              </a>  */}
+
+
+            <br /><br /><br />
+
+
+
+            <div className="flex center medel clomun">
+              <img className="appIcon" src="https://raw.githubusercontent.com/nahidhk/PabnaBloodFind-AndroidApp/refs/heads/main/assets/images/logo.jpg" alt="App Icon" />
+              <h2>
+                Pabna Blood Find
+              </h2>
+            </div>
+            <div className="flex center medel">
+              <div className="model flex center medel">
+                <div className="flex center medel point">
+                  <FaAndroid className="iconbtn" />
+                  &nbsp;
+                  v5.0.0
+                </div>
+                <div className="flex center medel point">
+                  <CgTimelapse className="iconbtn" />
+                  &nbsp;
+                  100 MB
+                </div>
+                <div className="flex center medel point">
+                  <BsDownload className="iconbtn" />
+                  &nbsp;
+                  1K+
+                </div>
+                <div className="flex center medel point">
+                  <FaCode className="iconbtn" />
+                  &nbsp;
+                  API
+                </div>
+              </div>
+            </div>
+            <div className="flex center medel">
+              <div className="model flex center medel">
+                App Version v5.0.0,
+                App Size 100 MB,      
+                App Downlods 1K+,
+                App Rating 4.8/5
+
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
       </div>

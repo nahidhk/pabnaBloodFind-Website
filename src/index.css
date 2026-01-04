@@ -136,8 +136,11 @@ h4 {
 	font-size: 26px;
 }
 
-.logoText {
+.mdText {
 	display: block;
+}
+.clomun{
+	flex-direction: column;
 }
 
 .bgImg {
@@ -205,10 +208,36 @@ h4 {
 .iconbtn {
 	font-size: 22px;
 }
-
+.appIcon {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	object-fit: cover;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+h1,p{
+	margin:0;
+	padding:0;
+}
+.textCenter{
+	text-align: center;
+}
+.model{
+	background-color: #00000057;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ffffff0d;
+	backdrop-filter: blur(10px);
+}
+.point{
+	background-color: #0000005b;
+	padding: 6px 12px;
+	border-radius: 20px;
+	margin: 5px;
+}
 
 @media only screen and (max-width: 768px) {
-	.logoText {
+	.mbText {
 		display: none;
 	}
 }
