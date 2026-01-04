@@ -78,7 +78,7 @@ h4 {
 /* Layout */
 .xLayout {
 	position: absolute;
-	top: 100px;
+	top: 120px;
 	width: 100%;
 }
 
@@ -141,14 +141,69 @@ h4 {
 }
 
 .bgImg {
-    height: 200px;
-    width: 100%;
-    background-image: url('./asset/img/81fd48e0-fddb-11ef-ab73-2916b85f325b.jpg.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* Dark effect */
-    filter: brightness(20%);
+	height: 200px;
+	width: 100%;
+	background-image: url('./asset/img/81fd48e0-fddb-11ef-ab73-2916b85f325b.jpg.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* Dark effect */
+	filter: brightness(20%);
+}
+
+.cllBtn {
+	position: absolute;
+	top: 90px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+}
+
+.buttonBox {
+	position: relative;
+	padding: 4px;
+	border: 1px solid #fff;
+	border-radius: 100px;
+	display: flex;
+	background: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+}
+
+.buttonBox button {
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	padding: 10px 16px;
+	cursor: pointer;
+	border-radius: 100px;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonBox button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #4680ff;
+	border-radius: 100px;
+	transition: all 0.4s ease;
+	z-index: -1;
+}
+
+.buttonBox button:hover::before,
+.buttonBox button.active::before{
+	left: 0;
+}
+.iconbtn {
+	font-size: 22px;
 }
 
 
