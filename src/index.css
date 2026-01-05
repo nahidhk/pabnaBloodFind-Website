@@ -139,14 +139,14 @@ h4 {
 .mdText {
 	display: block;
 }
-.clomun{
+.clomun {
 	flex-direction: column;
 }
 
 .bgImg {
 	height: 200px;
 	width: 100%;
-	background-image: url('./asset/img/81fd48e0-fddb-11ef-ab73-2916b85f325b.jpg.webp');
+	background-image: url("./asset/img/81fd48e0-fddb-11ef-ab73-2916b85f325b.jpg.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -202,7 +202,7 @@ h4 {
 }
 
 .buttonBox button:hover::before,
-.buttonBox button.active::before{
+.buttonBox button.active::before {
 	left: 0;
 }
 .iconbtn {
@@ -215,30 +215,31 @@ h4 {
 	object-fit: cover;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-h1,p{
-	margin:0;
-	padding:0;
+h1,
+p {
+	margin: 0;
+	padding: 0;
 }
-.textCenter{
+.textCenter {
 	text-align: center;
 }
-.model{
+.model {
 	background-color: #00000057;
 	padding: 10px;
 	border-radius: 10px;
 	border: 1px solid #ffffff0d;
 	backdrop-filter: blur(10px);
 }
-.point{
+.point {
 	background-color: #0000005b;
 	padding: 6px 12px;
 	border-radius: 20px;
 	margin: 5px;
 }
-.downloadBtn{
+.downloadBtn {
 	background-color: #4680ff;
-	color:#fff;
-	padding:10px 20px;
+	color: #fff;
+	padding: 10px 20px;
 	border-radius: 4px;
 	text-decoration: none;
 	font-weight: 600;
@@ -247,11 +248,19 @@ h1,p{
 	width: 210px;
 	text-align: center;
 }
-.downloadBtn:hover{
+.downloadBtn:hover {
 	background-color: #3562d6;
 	cursor: pointer;
 }
-
+.screenShort {
+	display: flex;
+	overflow: scroll;
+	width: 50%;
+}
+.screenShort img {
+	height: 500px;
+	border-radius: 10px;
+}
 @media only screen and (max-width: 768px) {
 	.mbText {
 		display: none;
