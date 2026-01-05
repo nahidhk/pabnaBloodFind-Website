@@ -235,6 +235,22 @@ h1,p{
 	border-radius: 20px;
 	margin: 5px;
 }
+.downloadBtn{
+	background-color: #4680ff;
+	color:#fff;
+	padding:10px 20px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: 0.3s;
+	margin: 10px;
+	width: 210px;
+	text-align: center;
+}
+.downloadBtn:hover{
+	background-color: #3562d6;
+	cursor: pointer;
+}
 
 @media only screen and (max-width: 768px) {
 	.mbText {

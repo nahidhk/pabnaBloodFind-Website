@@ -96,20 +96,15 @@ export default function Home() {
                   &nbsp;
                   1K+
                 </div>
-                <div className="flex center medel point">
-                  <FaCode className="iconbtn" />
-                  &nbsp;
-                  API
-                </div>
+                
               </div>
             </div>
             <div className="flex center medel">
-              <div className="model flex center medel">
-                App Version v5.0.0,
-                App Size 100 MB,      
-                App Downlods 1K+,
-                App Rating 4.8/5
-
+              <div className=" flex center medel">
+                <div className="downloadBtn">
+                  Download Now
+                  
+                </div>
               </div>
             </div>
 
