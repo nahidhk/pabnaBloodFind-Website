@@ -275,3 +275,27 @@ p {
 		width: 400px;
 	}
 }
+
+
+/* পুরো scrollbar */
+::-webkit-scrollbar {
+  width: 10px;      /* vertical scrollbar */
+  height: 8px;      /* horizontal scrollbar */
+}
+
+/* scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f117;
+  border-radius: 10px;
+}
+
+/* scrollbar thumb (যেটা নড়ে) */
+::-webkit-scrollbar-thumb {
+  background: #5555554b;
+  border-radius: 10px;
+}
+
+/* hover করলে */
+::-webkit-scrollbar-thumb:hover {
+  background: #22222239;
+}
