@@ -50,7 +50,6 @@ export default function Home() {
             </span>
           </button>
           <button>
-
             <span className="mbText">
               <FaCode className="iconbtn" />
               &nbsp;
@@ -70,23 +69,10 @@ export default function Home() {
             <p className="textCenter">
               Pabna Blood Find is now available as an Android app. Download it now to find blood donors in Pabna with ease.
             </p>
-
             <p className="textCenter">
               Click the button below to download the app and start using it today!
             </p>
-
-
-
-
-            {/* <a className="downloadBtn" href="https://play.google.com/store/apps/details?id=com.pabna.blood.find">
-                Download Now
-              </a>  */}
-
-
             <br /><br /><br />
-
-
-
       <div className="flex center medel clomun">
         <img className="appIcon" src="https://raw.githubusercontent.com/nahidhk/PabnaBloodFind-AndroidApp/refs/heads/main/assets/images/logo.jpg" alt="App Icon" />
       <h2>
@@ -121,16 +107,16 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="flex center medel">
-      <div className="screenShort">
-        <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
-      <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
 
+    <div className="screenShort">
+      <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
     <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
+
+  <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
   <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
 
 </div>
-</div>
+
 
 
 
