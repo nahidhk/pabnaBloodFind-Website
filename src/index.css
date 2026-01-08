@@ -261,8 +261,10 @@ p {
 	height: 400px;
 	border-radius: 10px;
 	margin: 10px;
-	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px
-	24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+	box-shadow:
+		rgba(17, 17, 26, 0.1) 0px 4px 16px,
+		rgba(17, 17, 26, 0.1) 0px 8px 24px,
+		rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .test {
 	background-color: red;
@@ -276,26 +278,25 @@ p {
 	}
 }
 
-
 /* পুরো scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;      /* vertical scrollbar */
-  height: 8px;      /* horizontal scrollbar */
+	width: 5px; /* vertical scrollbar */
+	height: 5px; /* horizontal scrollbar */
 }
 
 /* scrollbar track (background) */
 ::-webkit-scrollbar-track {
-  background: #f1f1f117;
-  border-radius: 10px;
+	background: transparent;
+	border-radius: 10px;
 }
 
 /* scrollbar thumb (যেটা নড়ে) */
 ::-webkit-scrollbar-thumb {
-  background: #5555554b;
-  border-radius: 10px;
+	background: #555;
+	border-radius: 10px;
 }
 
 /* hover করলে */
 ::-webkit-scrollbar-thumb:hover {
-  background: #22222239;
+	background: #fefefe;
 }

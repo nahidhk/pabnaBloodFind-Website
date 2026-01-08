@@ -60,7 +60,9 @@ export default function Home() {
       </div>
       <div className="xLayout">
         <div className="container">
-          <div className="card">
+          {
+          downBtn ? (
+                    <div className="card">
             <h1 className="flex center medel ">
               <p>
                 Download  <span className="ffd">Pabna Blood Find </span> Android app
@@ -111,10 +113,8 @@ export default function Home() {
     <div className="screenShort">
       <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
     <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
-
   <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
   <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
-
 </div>
 
 
@@ -122,8 +122,11 @@ export default function Home() {
 
 
 </div>
-</div>
-</div>
-</>
-)
+          ):
+          ""
+          }
+        </div>
+      </div>
+    </>
+  )
 }
