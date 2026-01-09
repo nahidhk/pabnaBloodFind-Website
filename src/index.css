@@ -139,6 +139,7 @@ h4 {
 .mdText {
 	display: block;
 }
+
 .clomun {
 	flex-direction: column;
 }
@@ -205,9 +206,11 @@ h4 {
 .buttonBox button.active::before {
 	left: 0;
 }
+
 .iconbtn {
 	font-size: 22px;
 }
+
 .appIcon {
 	width: 100px;
 	height: 100px;
@@ -215,14 +218,17 @@ h4 {
 	object-fit: cover;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 h1,
 p {
 	margin: 0;
 	padding: 0;
 }
+
 .textCenter {
 	text-align: center;
 }
+
 .model {
 	background-color: #00000057;
 	padding: 10px;
@@ -230,12 +236,14 @@ p {
 	border: 1px solid #ffffff0d;
 	backdrop-filter: blur(10px);
 }
+
 .point {
 	background-color: #0000005b;
 	padding: 6px 12px;
 	border-radius: 20px;
 	margin: 5px;
 }
+
 .downloadBtn {
 	background-color: #4680ff;
 	color: #fff;
@@ -248,15 +256,18 @@ p {
 	width: 210px;
 	text-align: center;
 }
+
 .downloadBtn:hover {
 	background-color: #3562d6;
 	cursor: pointer;
 }
+
 .screenShort {
 	display: flex;
 	overflow: scroll;
 	width: auto;
 }
+
 .screenShort img {
 	height: 400px;
 	border-radius: 10px;
@@ -266,13 +277,110 @@ p {
 		rgba(17, 17, 26, 0.1) 0px 8px 24px,
 		rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
+
 .test {
 	background-color: red;
 }
+
+.inputField {
+	width: 300px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin: 10px 0;
+	font-size: 16px;
+	background-color: #ffffff0d;
+	color: #fff;
+	outline-color: #4680ff;
+}
+
+.inputField:focus {
+	background-color: #ffffff1a;
+	border: 1px solid #4680ff;
+	outline: none;
+}
+
+.inputField::placeholder {
+	color: #d1d5db63;
+}
+
+.searchButton {
+	background-color: #4680ff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: 0.3s;
+	border: none;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.searchButton:hover {
+	background-color: #3562d6;
+}
+
+.usersImg {
+	height: 80px;
+	width: 80px;
+	border: 2px solid #4680ff;
+	padding: 3px;
+	border-radius: 100px;
+}
+
+.marginLeft {
+	margin-left: 10px;
+}
+
+.mark {
+	background-color: #2a2a2a30;
+	padding: 2px 6px;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.blood {
+	color: #ff3b3b;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 5px;
+}
+
+.socalIcon {
+	display: flex;
+	gap: 10px;
+	font-size: 30px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.whatsAppIcon {
+	color: #25D366;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.phoneIcon {
+	color: #4680ff;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.whatsAppIcon:hover {
+	color: #128C7E;
+}
+
+.phoneIcon:hover {
+	color: #3562d6;
+}
+
 @media only screen and (max-width: 768px) {
 	.mbText {
 		display: none;
 	}
+
 	.screenShort {
 		width: 400px;
 	}
@@ -280,8 +388,10 @@ p {
 
 /* পুরো scrollbar */
 ::-webkit-scrollbar {
-	width: 5px; /* vertical scrollbar */
-	height: 5px; /* horizontal scrollbar */
+	width: 5px;
+	/* vertical scrollbar */
+	height: 5px;
+	/* horizontal scrollbar */
 }
 
 /* scrollbar track (background) */

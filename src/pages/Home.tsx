@@ -3,10 +3,11 @@ import { BsDownload } from "react-icons/bs";
 import { FaSearchengin, FaRegCircleUser, FaCode, FaAndroid } from "react-icons/fa6";
 import { CgTimelapse } from "react-icons/cg";
 import AppDownload from "../components/AppDownload";
+import FindBlood from "../components/FindBlood";
 
 
 export default function Home() {
-  const [downBtn, setdownBtn] = useState(true); 
+  const [downBtn, setdownBtn] = useState(true);
   const [find, setFind] = useState(false);
   const [profile, setProfile] = useState(false);
   return (
@@ -55,16 +56,7 @@ export default function Home() {
           }
           {
             find ? (
-              <div className="card">
-                <h1 className="flex center medel ">
-                  <p>
-                    Find Blood Donor
-                  </p>
-                </h1>
-                <p className="textCenter">
-                  Use the search feature to find blood donors in your area quickly and easily.
-                </p>
-              </div>
+              <FindBlood />
             ) : ""
           }
         </div>

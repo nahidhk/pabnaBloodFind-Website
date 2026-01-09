@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsDownload } from "react-icons/bs";
 import { FaSearchengin, FaRegCircleUser, FaCode, FaAndroid } from "react-icons/fa6";
 import { CgTimelapse } from "react-icons/cg";
@@ -6,6 +6,9 @@ import { CgTimelapse } from "react-icons/cg";
 
 
 export default function AppDownload() {
+  useEffect(() => {
+    document.title = "Download App - Pabna Blood Find";
+  })
     return(
         <>
          <div className="card">
