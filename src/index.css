@@ -235,6 +235,15 @@ p {
 	border-radius: 10px;
 	border: 1px solid #ffffff0d;
 	backdrop-filter: blur(10px);
+	animation: animation 0.5s;
+}
+@keyframes animation {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 .point {
@@ -321,7 +330,7 @@ p {
 	background-color: #3562d6;
 }
 
-.usersImg {
+.userImg {
 	height: 80px;
 	width: 80px;
 	border: 2px solid #4680ff;
@@ -357,7 +366,7 @@ p {
 }
 
 .whatsAppIcon {
-	color: #25D366;
+	color: #25d366;
 	cursor: pointer;
 	transition: 0.3s;
 }
@@ -369,7 +378,7 @@ p {
 }
 
 .whatsAppIcon:hover {
-	color: #128C7E;
+	color: #128c7e;
 }
 
 .phoneIcon:hover {
