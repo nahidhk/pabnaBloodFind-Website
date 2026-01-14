@@ -38,7 +38,7 @@ export default function Home() {
               Your Card and Profile
             </span>
           </button>
-          <button onClick={() => { window.location.href = "https://github.com/nahidhk/"} }>
+          <button onClick={() => { window.location.href = "https://github.com/nahidhk/pabnaBloodFind-Website?tab=readme-ov-file#api-request"} }>
             <span className="mbText">
               <FaCode className="iconbtn" />
               &nbsp;
