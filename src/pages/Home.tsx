@@ -4,6 +4,7 @@ import { FaSearchengin, FaRegCircleUser, FaCode, FaAndroid } from "react-icons/f
 import { CgTimelapse } from "react-icons/cg";
 import AppDownload from "../components/AppDownload";
 import FindBlood from "../components/FindBlood";
+import Profile from "../components/Profile";
 
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
               Your Card and Profile
             </span>
           </button>
-          <button>
+          <button onClick={() => { window.location.href = "https://github.com/nahidhk/"} }>
             <span className="mbText">
               <FaCode className="iconbtn" />
               &nbsp;
@@ -57,6 +58,11 @@ export default function Home() {
           {
             find ? (
               <FindBlood />
+            ) : ""
+          }
+          {
+            profile ? (
+              <Profile />
             ) : ""
           }
         </div>
