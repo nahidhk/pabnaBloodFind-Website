@@ -237,10 +237,12 @@ p {
 	backdrop-filter: blur(10px);
 	animation: animation 0.5s;
 }
+
 @keyframes animation {
 	0% {
 		transform: scale(0);
 	}
+
 	100% {
 		transform: scale(1);
 	}
@@ -264,6 +266,7 @@ p {
 	margin: 10px;
 	width: 210px;
 	text-align: center;
+	border: none;
 }
 
 .downloadBtn:hover {
@@ -331,11 +334,10 @@ p {
 }
 
 .userImg {
-	height: 80px;
-	width: 80px;
+	height: 200px;
+	width: 200px;
 	border: 2px solid #4680ff;
 	padding: 3px;
-	border-radius: 100px;
 }
 
 .marginLeft {
@@ -343,11 +345,11 @@ p {
 }
 
 .mark {
-	background-color: #2a2a2a30;
+	background-color: #ffffff57;
 	padding: 2px 6px;
 	border-radius: 4px;
 	color: #fff;
-	font-size: 14px;
+	margin: 10px;
 }
 
 .blood {
@@ -385,6 +387,10 @@ p {
 	color: #3562d6;
 }
 
+.ff4680 {
+	color: #4680ff;
+}
+
 @media only screen and (max-width: 768px) {
 	.mbText {
 		display: none;
@@ -392,6 +398,14 @@ p {
 
 	.screenShort {
 		width: 400px;
+	}
+
+	.userImg {
+		height: 80px;
+		width: 80px;
+		border: 2px solid #4680ff;
+		padding: 3px;
+		border-radius: 100px;
 	}
 }
 
@@ -419,32 +433,37 @@ p {
 ::-webkit-scrollbar-thumb:hover {
 	background: #fefefe;
 }
+
 /* HTML: <div class="loader"></div> */
 .loader {
-  width: 50px;
-  aspect-ratio: 1;
-  display: grid;
-}
-.loader::before,
-.loader::after {    
-  content:"";
-  grid-area: 1/1;
-  --c:no-repeat radial-gradient(farthest-side,#25b09b 92%,#0000);
-  background: 
-    var(--c) 50%  0, 
-    var(--c) 50%  100%, 
-    var(--c) 100% 50%, 
-    var(--c) 0    50%;
-  background-size: 12px 12px;
-  animation: l12 1s infinite;
-}
-.loader::before {
-  margin: 4px;
-  filter: hue-rotate(45deg);
-  background-size: 8px 8px;
-  animation-timing-function: linear
+	width: 50px;
+	aspect-ratio: 1;
+	display: grid;
 }
 
-@keyframes l12 { 
-  100%{transform: rotate(.5turn)}
+.loader::before,
+.loader::after {
+	content: "";
+	grid-area: 1/1;
+	--c: no-repeat radial-gradient(farthest-side, #25b09b 92%, #0000);
+	background:
+		var(--c) 50% 0,
+		var(--c) 50% 100%,
+		var(--c) 100% 50%,
+		var(--c) 0 50%;
+	background-size: 12px 12px;
+	animation: l12 1s infinite;
+}
+
+.loader::before {
+	margin: 4px;
+	filter: hue-rotate(45deg);
+	background-size: 8px 8px;
+	animation-timing-function: linear
+}
+
+@keyframes l12 {
+	100% {
+		transform: rotate(.5turn)
+	}
 }

@@ -10,6 +10,8 @@ import {
     FaFemale,
 } from "react-icons/fa";
 import url from "../api/url.json";
+import { MdVerified } from "react-icons/md";
+
 
 
 interface Donor {
@@ -107,30 +109,27 @@ export default function FindBlood() {
                         {!loading &&
                             filteredData.map((item) => (
                                 <div key={item.id} className="model">
-                                    <div className="flex medel">
+                                    <div className="flex center medel">
                                         <img
-                                            src={item.image || "https://github.com/nahidhk.png"}
+                                             src={item.image || "https://simhub.github.io/avatar-face-expression/img/avatar/svg/neutral_male.svg"}
                                             className="userImg"
                                             alt="donor"
+                                          
                                         />
 
                                         <div className="marginLeft">
-                                            <h2>{item.name} {item.v === "1" ? "(Verified)" : "(Unverified)"}</h2>
-
-                                            <p>
-                                                <span className="mark">
-                                                    {item.gender === "male" ? (
-                                                        <>
-                                                            <FaMale /> Male
-                                                        </>
-                                                    ) : (
-                                                        <>
-                                                            <FaFemale /> Female
-                                                        </>
-                                                    )}
-                                                </span>
+                                            <h2 className="flex center medel">{item.name} {item.v === "1" ? (<MdVerified className="ff4680" />) : "(Unverified)"}</h2>
+                                            <p className="mark flex center medel">
+                                                {item.gender === "male" ? (
+                                                    <>
+                                                        👨 Male
+                                                    </>
+                                                ) : (
+                                                    <>
+                                                        👩 Female
+                                                    </>
+                                                )}
                                             </p>
-
                                             <p>
                                                 📞 <b>{item.phone}</b>
                                             </p>
@@ -144,7 +143,7 @@ export default function FindBlood() {
                                                 📍 {item.address}
                                             </p>
 
-                                            <div className="socalIcon">
+                                            <div className="socalIcon flex center medel">
                                                 <a href={`tel:${item.phone}`}>
                                                     <FaPhoneSquareAlt className="phoneIcon" />
                                                 </a>

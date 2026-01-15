@@ -1,10 +1,25 @@
 import React from "react";
 
 function Profile() {
+  const [userNumber, setUserNumber] = React.useState("");
   return (
-    <div>
-      <h1>Your Card and Profile</h1>
-      <p>This section is under construction.</p>
+    <div className="card">
+      <div className="flex center medel">
+        <div>
+          <div className="flex center medel clomun">
+            <h1>
+              Profile Create and Download Card
+            </h1>
+            <p className="textCenter">
+             To verify your profile picture and profile, you must have a GitHub profile and star the open source on that GitHub so that your profile is automatically verified.
+            </p>
+             <input onChange={(e) => setUserNumber(e.target.value)} type="" className="inputField" placeholder="Type Your Mobile Number"/>
+             <button className="downloadBtn">
+              Porced
+             </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
