@@ -1,4 +1,5 @@
 import React from "react";
+import { GrLinkNext } from "react-icons/gr";
 
 function Profile() {
   const [userNumber, setUserNumber] = React.useState("");
@@ -14,10 +15,20 @@ function Profile() {
              To verify your profile picture and profile, you must have a GitHub profile and star the open source on that GitHub so that your profile is automatically verified.
             </p>
              <input onChange={(e) => setUserNumber(e.target.value)} type="" className="inputField" placeholder="Type Your Mobile Number"/>
-             <button className="downloadBtn">
-              Porced
+             <button className="downloadBtn flex center medel">
+              Proceed
+              <GrLinkNext size={20} style={{ marginLeft: "8px" }} />
              </button>
           </div>
+        </div>
+      </div>
+      <div className="flext center medel">
+        <div className="model">
+         
+
+
+
+         
         </div>
       </div>
     </div>
