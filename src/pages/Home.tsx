@@ -5,6 +5,7 @@ import { CgTimelapse } from "react-icons/cg";
 import AppDownload from "../components/AppDownload";
 import FindBlood from "../components/FindBlood";
 import Profile from "../components/Profile";
+import Bottom from "./Bottom";
 
 
 export default function Home() {
@@ -65,7 +66,9 @@ export default function Home() {
               <Profile />
             ) : ""
           }
+
         </div>
+         <Bottom />
       </div>
     </>
   )

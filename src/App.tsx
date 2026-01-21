@@ -10,6 +10,7 @@ function App() {
     <>
       <Nav />
       <Home />
+     
     </>
   );
 }
