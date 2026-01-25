@@ -111,7 +111,7 @@ export default function FindBlood() {
                                 <div key={item.id} className="model">
                                     <div className="flex center medel">
                                         <img
-                                             src={item.image || "https://simhub.github.io/avatar-face-expression/img/avatar/svg/neutral_male.svg"}
+                                            src={item.image || "https://simhub.github.io/avatar-face-expression/img/avatar/svg/neutral_male.svg"}
                                             className="userImg"
                                             alt="donor"
                                           

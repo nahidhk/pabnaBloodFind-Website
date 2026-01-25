@@ -24,17 +24,21 @@ export default function StarUsers() {
     }, []);
 
     return (
-        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-            {data.map(item => (
-                <img
-                    key={item.id}
-                    src={item.avatar_url}
-                    alt={item.login}
-                    title={item.login}
-                    width={50}
-                    style={{ borderRadius: "50%" }}
-                />
-            ))}
+        <div className="flex center">
+            <div className="userStartBox">
+                <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
+                    {data.map(item => (
+                        <img
+                            key={item.id}
+                            src={item.avatar_url}
+                            alt={item.login}
+                            title={item.login}
+                            width={50}
+                            style={{ borderRadius: "50%" }}
+                        />
+                    ))}
+                </div>
+            </div>
         </div>
     );
 }
