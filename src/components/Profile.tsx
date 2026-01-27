@@ -73,7 +73,7 @@ function Profile() {
         </div>
       </div>
 
-      <div className="flex center medel">
+      <div className="flex center medel w100">
         {status === "notfound" && (
           <div className="model">
             ❌ Data nai
@@ -82,7 +82,7 @@ function Profile() {
 
         {status === "found" && userData && (
           <div className="model">
-            <h3>✅ User Found</h3>
+            <h3>✅ser Found</h3>
             <p><strong>Name:</strong> {userData.name}</p>
             {userData.phone && <p><strong>Phone:</strong> {userData.phone}</p>}
             {userData.email && <p><strong>Email:</strong> {userData.email}</p>}
