@@ -2,10 +2,10 @@ import React from "react";
 import { GrLinkNext } from "react-icons/gr";
 
 interface User {
-  id?: number;
+  id: number;
   name: string;
-  phone?: string;
-  email?: string;
+  phone: string;
+  v: number;
 }
 
 function Profile() {
@@ -81,12 +81,21 @@ function Profile() {
         )}
 
         {status === "found" && userData && (
-          <div className="model">
-            <h3>✅ser Found</h3>
-            <p><strong>Name:</strong> {userData.name}</p>
-            {userData.phone && <p><strong>Phone:</strong> {userData.phone}</p>}
-            {userData.email && <p><strong>Email:</strong> {userData.email}</p>}
-          </div>
+        <div className="model">
+         {
+           userData.v === 1 ? (
+          <>
+            True
+            {userData.v}
+          </> 
+           ) : (
+           <>
+             False
+             {userData.v}
+           </>
+           )
+         }
+        </div>
         )}
       </div>
     </div>
