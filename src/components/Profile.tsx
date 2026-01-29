@@ -27,7 +27,7 @@ function Profile() {
       .then(res => res.json())
       .then(data => {
         if (data?.[0]?.id) {
-          setUserData(data[0]);     // ✅ single user
+          setUserData(data[0]);     
           setStatus("found");
         } else {
           setStatus("notfound");
@@ -90,8 +90,7 @@ function Profile() {
           </> 
            ) : (
            <>
-             False
-             {userData.v}
+            
            </>
            )
          }
