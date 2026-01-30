@@ -13,7 +13,6 @@ export default function StarUsers() {
     const [data, setData] = useState<GitHubUser[]>([]);
 
     useEffect(() => {
-        document.title = "GitHub Star Users - Pabna Blood Find";
 
         fetch(apiUrl)
             .then(res => res.json())
@@ -22,6 +21,10 @@ export default function StarUsers() {
             })
             .catch(err => console.error(err));
     }, []);
+
+
+
+
 
     return (
         <div className="flex center">

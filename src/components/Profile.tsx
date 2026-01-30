@@ -1,5 +1,6 @@
 import React from "react";
 import { GrLinkNext } from "react-icons/gr";
+import UserNotVerifay from "./Hook/UserNotVerifay";
 
 interface User {
   id: number;
@@ -27,7 +28,7 @@ function Profile() {
       .then(res => res.json())
       .then(data => {
         if (data?.[0]?.id) {
-          setUserData(data[0]);     
+          setUserData(data[0]);
           setStatus("found");
         } else {
           setStatus("notfound");
@@ -75,26 +76,26 @@ function Profile() {
 
       <div className="flex center medel w100">
         {status === "notfound" && (
-          <div className="model">
+          <div className="card">
             ❌ Data nai
           </div>
         )}
 
         {status === "found" && userData && (
-        <div className="model">
-         {
-           userData.v === 1 ? (
-          <>
-            True
-            {userData.v}
-          </> 
-           ) : (
-           <>
-            
-           </>
-           )
-         }
-        </div>
+          <div>
+            {
+              userData.v === 1 ? (
+                <>
+                  True
+                  {userData.v}
+                </>
+              ) : (
+                <>
+                  <UserNotVerifay />
+                </>
+              )
+            }
+          </div>
         )}
       </div>
     </div>
@@ -102,3 +103,6 @@ function Profile() {
 }
 
 export default Profile;
+
+
+
