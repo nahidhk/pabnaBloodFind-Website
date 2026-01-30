@@ -106,60 +106,67 @@ export default function FindBlood() {
                         )}
 
 
-                        {!loading &&
-                            filteredData.map((item) => (
-                                <div key={item.id} className="model">
-                                    <div className="flex center medel">
-                                        <img
-                                            src={item.image || "https://simhub.github.io/avatar-face-expression/img/avatar/svg/neutral_male.svg"}
-                                            className="userImg"
-                                            alt="donor"
-                                          
-                                        />
 
-                                        <div className="marginLeft">
-                                            <h2 className="flex center medel">{item.name} {item.v === "1" ? (<MdVerified className="ff4680" />) : "(Unverified)"}</h2>
-                                            <p className="mark flex center medel">
-                                                {item.gender === "male" ? (
-                                                    <>
-                                                        👨 Male
-                                                    </>
-                                                ) : (
-                                                    <>
-                                                        👩 Female
-                                                    </>
-                                                )}
-                                            </p>
-                                            <p>
-                                                📞 <b>{item.phone}</b>
-                                            </p>
+                        <div className="flex center medel wrap">
 
-                                            <p>
-                                                🩸 Blood:
-                                                <span className="blood"> {item.bloodgroup}</span>
-                                            </p>
+                            {!loading &&
+                                filteredData.map((item) => (
+                                    <div key={item.id} className="model boxCard">
+                                        <div className="flex center medel">
+                                            <img
+                                                src={item.image || "https://simhub.github.io/avatar-face-expression/img/avatar/svg/neutral_male.svg"}
+                                                className="userImg"
+                                                alt="donor"
 
-                                            <p>
-                                                📍 {item.address}
-                                            </p>
+                                            />
 
-                                            <div className="socalIcon flex center medel">
-                                                <a href={`tel:${item.phone}`}>
-                                                    <FaPhoneSquareAlt className="phoneIcon" />
-                                                </a>
+                                            <div className="marginLeft">
+                                                <h2 className="flex center medel">{item.name} {item.v === "1" ? (<MdVerified className="ff4680" />) : "(Unverified)"}</h2>
+                                                <p className="mark flex center medel">
+                                                    {item.gender === "male" ? (
+                                                        <>
+                                                            👨 Male
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            👩 Female
+                                                        </>
+                                                    )}
+                                                </p>
+                                                <p>
+                                                    📞 <b>{item.phone}</b>
+                                                </p>
 
-                                                <a
-                                                    href={`https://wa.me/88${item.whatsapp_number}`}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                >
-                                                    <FaWhatsappSquare className="whatsAppIcon" />
-                                                </a>
+                                                <p>
+                                                    🩸 Blood:
+                                                    <span className="blood"> {item.bloodgroup}</span>
+                                                </p>
+
+                                                <p>
+                                                    📍 {item.address}
+                                                </p>
+
+                                                <div className="socalIcon flex center medel">
+                                                    <a href={`tel:${item.phone}`}>
+                                                        <FaPhoneSquareAlt className="phoneIcon" />
+                                                    </a>
+
+                                                    <a
+                                                        href={`https://wa.me/88${item.whatsapp_number}`}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                        <FaWhatsappSquare className="whatsAppIcon" />
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>

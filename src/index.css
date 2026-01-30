@@ -474,6 +474,10 @@ p {
 	animation-timing-function: linear
 }
 
+.boxCard{
+	width: 300px ;
+	margin: 10px;
+}
 @keyframes l12 {
 	100% {
 		transform: rotate(.5turn)
