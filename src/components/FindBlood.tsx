@@ -107,7 +107,7 @@ export default function FindBlood() {
 
 
 
-                        <div className="flex center medel wrap">
+                        <div className="flex center medel clomun">
 
                             {!loading &&
                                 filteredData.map((item) => (
