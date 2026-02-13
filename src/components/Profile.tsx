@@ -77,7 +77,7 @@ function Profile() {
       <div className="flex center medel w100">
         {status === "notfound" && (
           <div className="card">
-            ❌ Data nai
+            Download app
           </div>
         )}
 
