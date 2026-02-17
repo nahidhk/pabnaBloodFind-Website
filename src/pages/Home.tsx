@@ -3,43 +3,25 @@ import { BsDownload } from "react-icons/bs";
 import { FaSearchengin, FaRegCircleUser, FaCode, FaAndroid } from "react-icons/fa6";
 import { CgTimelapse } from "react-icons/cg";
 import AppDownload from "../components/AppDownload";
-import FindBlood from "../components/FindBlood";
-import Profile from "../components/Profile";
 import Bottom from "./Bottom";
 
 
 export default function Home() {
   const [downBtn, setdownBtn] = useState(true);
-  const [find, setFind] = useState(false);
-  const [profile, setProfile] = useState(false);
   return (
     <>
       <div className="bgImg">
       </div>
       <div className="cllBtn">
         <div className="buttonBox">
-          <button className={downBtn ? "active" : ""} onClick={() => { { setFind(false); setProfile(false); setdownBtn(true) } }}>
+          <button className={downBtn ? "active" : ""} onClick={() =>  setdownBtn(true) }>
             <BsDownload className="iconbtn" />
             <span className="mbText">
               &nbsp;
               Dowonload App
             </span>
           </button>
-          <button className={find ? "active" : ""} onClick={() => { setFind(true); setProfile(false); setdownBtn(false) }}>
-            <FaSearchengin className="iconbtn" />
-            <span className="mbText">
-              &nbsp;
-              Find Blood Donor
-            </span>
-          </button>
-          <button className={profile ? "active" : ""} onClick={() => { { setFind(false); setProfile(true); setdownBtn(false) } }}>
-            <FaRegCircleUser className="iconbtn" />
-            <span className="mbText">
-              &nbsp;
-              Your Card and Profile
-            </span>
-          </button>
-          <button onClick={() => { window.location.href = "https://github.com/nahidhk/pabnaBloodFind-Website?tab=readme-ov-file#api-request"} }>
+          <button onClick={() => { window.location.href = "https://github.com/nahidhk/pabnaBloodFind-Website?tab=readme-ov-file#api-request" }}>
             <span className="mbText">
               <FaCode className="iconbtn" />
               &nbsp;
@@ -56,19 +38,10 @@ export default function Home() {
             ) :
               ""
           }
-          {
-            find ? (
-              <FindBlood />
-            ) : ""
-          }
-          {
-            profile ? (
-              <Profile />
-            ) : ""
-          }
+
 
         </div>
-         <Bottom />
+        <Bottom />
       </div>
     </>
   )

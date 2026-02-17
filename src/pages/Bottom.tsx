@@ -1,10 +1,17 @@
 import React from "react";
 import StartUsers from "../components/StartUsers";
 
-export default function Bottom(){
-    return(
+export default function Bottom() {
+    return (
         <>
-        <StartUsers />
+            <StartUsers />
+            <div className="flex center medel">
+                <blockquote>
+                    <p>
+                        Powered by <strong>NdSQL</strong> &reg; - Copyright &copy; All rights reserved
+                    </p>
+                </blockquote>
+            </div>
         </>
     )
 }

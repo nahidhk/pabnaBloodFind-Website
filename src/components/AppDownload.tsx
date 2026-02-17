@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BsDownload } from "react-icons/bs";
-import { FaSearchengin, FaRegCircleUser, FaCode, FaAndroid } from "react-icons/fa6";
+import { FaAndroid } from "react-icons/fa6";
 import { CgTimelapse } from "react-icons/cg";
-
+import screnshorts from "../data/screnshorts.json"
 
 
 export default function AppDownload() {
@@ -59,16 +59,16 @@ export default function AppDownload() {
         </div>
 
 
-        <div className="screenShort">
-          <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
-          <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
-          <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
-          <img src="https://i.redd.it/f7w4c9nkzgbg1.jpeg" />
+
+    <div className="flex center medel">
+          <div className="screenShort">
+            {
+              screnshorts.map((item , index) => (
+                <img key={index} src={item} alt="" />
+              ))
+            }
         </div>
-
-
-
-
+    </div>
 
 
       </div>
